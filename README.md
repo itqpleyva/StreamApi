@@ -11,9 +11,10 @@ public class StreamsMain {
 		
 //convert the array into list
 		List<Integer> list = Arrays.asList(arrayInt);
-		// using streams
-			//peek used to catch every value
-			//mapToInt to convert every value on int
+
+//peek used to catch every value
+//mapToInt to convert every value on int
+
 		int count = list.stream().peek(c -> {
 			
 			System.out.println("-"+ c);

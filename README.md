@@ -28,6 +28,7 @@ public class StreamsMain {
 		List<String> listaString = Arrays.asList(arrayString);
 		
 //1 solution using reduce
+
 		String mayor = listaString.stream().reduce((a,b) -> {
 			if (a.length() > b.length())
 				return a;
@@ -36,6 +37,7 @@ public class StreamsMain {
 		System.out.println(mayor);
 		
 //2 solution using max
+
 		String mayor2 = listaString.stream().max(Comparator.comparing(String::length)).get();
 		System.out.println(mayor2);
 	}
